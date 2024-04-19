@@ -50,6 +50,7 @@ class Reserve{
 			instance = new Reserve();
 		}
 		return instance;
+		
 	}
 
 	
@@ -59,6 +60,7 @@ class Reserve{
 	 *  아니면 예약에 name ="예약 할사람 이름", 
 	 *            reserve = true;
 	 */
+	
 	
 	public void reservation(String name) {
 		if (reserve == true) {
