@@ -7,13 +7,13 @@ public class BigLoadExample {
 	public static void main(String[] args) {
 		Date d1 = new Date();
 		
-//		BigLoad b1 = BigLoad.getInstance();
-//		BigLoad b2 = BigLoad.getInstance();
-//		BigLoad b3 = BigLoad.getInstance();
+		BigLoad b1 = BigLoad.getInstance();
+		BigLoad b2 = BigLoad.getInstance();
+		BigLoad b3 = BigLoad.getInstance();
 		
-		BigLoad b1 = new BigLoad();
-		BigLoad b2 = new BigLoad();
-		BigLoad b3 = new BigLoad();
+//		BigLoad b1 = new BigLoad();
+//		BigLoad b2 = new BigLoad();
+//		BigLoad b3 = new BigLoad();
 
 		
 		

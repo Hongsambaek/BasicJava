@@ -28,7 +28,6 @@ public class Homework13 {
 			if(sel == 3) {
 				break;
 			}
-		
 		}
 	}
 }
