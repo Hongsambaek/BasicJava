@@ -10,12 +10,15 @@ public class Homework14 {
 		Homework14 h14 = new Homework14();
 		while(true) {
 			System.out.println("1. 회원 가입.");
-//			System.out.println("2. 회원 탈퇴.");
+			System.out.println("2. 회원 탈퇴.");
 			System.out.println("3. 정보 수정.");
 			System.out.println("4. 회원 전체 정보 출력.");
 			int sel = sc.nextInt();
 			if(sel==1) {
 				h14.addMember();
+			}
+			if(sel==2) {
+				h14.removeMember();
 			}
 			if(sel==3) {
 				h14.updateMember();
@@ -45,6 +48,22 @@ public class Homework14 {
 		memList[cnt] = m1;
 		cnt++;
 		
+		
+	}
+	
+	public void removeMember() {
+		Mem[] temp = new Mem[100];
+		printMemberList();
+		System.out.println("삭제할 회원 번호를 입력하세요.");
+		int num = sc.nextInt();
+		int add = 0;
+		for(int i = 0; i<cnt; i++) {
+			if(i==num) add++;
+			temp[i] = memList[i+add];
+		}
+		memList = temp;
+		cnt--;
+		printMemberList();
 		
 	}
 	
@@ -97,6 +116,8 @@ public class Homework14 {
 		mem.setAge(age);
 		
 	}
+	
+	
 	
 }
 class Mem{
