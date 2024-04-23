@@ -2,6 +2,7 @@ package kr.or.ddit.study11;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -18,7 +19,8 @@ public class DateExample {
 //		method2();
 //		method3();
 //		method4();
-		method5();
+//		method5();
+		method6();
 		
 	}
 	
@@ -123,7 +125,14 @@ public class DateExample {
 	}
 	
 	
-	
+	public void method6() {
+		Calendar cal = Calendar.getInstance();
+		cal.add(Calendar.YEAR, 1);  //더할때는 ADD
+		cal.set(Calendar.HOUR, 30); //바꿀때는 SET
+		int year = cal.get(Calendar.YEAR);
+		Date date = cal.getTime();
+		System.out.println(date);
+	}
 	
 	
 	
