@@ -22,17 +22,7 @@ public class Homework15 {
 	
 			
 			//달 입력
-			System.out.println("입력");
-			String str = sc.next();
-			if (str.equals(">")) {
-				cal.add(month, 1);
-			}
-			else if (str.equals("<")) {
-				cal.add(month, -1);
-			}
-			else {
-				month = Integer.parseInt(str);
-			}
+
 			//첫날의 요일 구하기
 			cal.set(Calendar.DATE, 1);
 			int day = cal.get(Calendar.DAY_OF_WEEK);
@@ -40,10 +30,11 @@ public class Homework15 {
 			//입력달 마지막일
 			int lastDay = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
 			//출력
-			System.out.println("----------------------------------------------");
+			
+			System.out.println("------------------------------------------------------");
 			System.out.println("일\t월\t화\t수\t목\t금\t토");
-			System.out.println("----------------------------------------------");
-			for (int i = 1; i < day-1; i++) {
+			System.out.println("------------------------------------------------------");
+			for (int i = 0; i < day-1; i++) {
 				System.out.print("\t");
 			}
 			for (int i = 1; i <= lastDay; i++) {
@@ -55,7 +46,14 @@ public class Homework15 {
 				day++;
 			}
 			System.out.println();
-			System.out.println("----------------------------------------------");
+			System.out.println("------------------------------------------------------");
+			String str = sc.next();
+			if (str.equals(">")) {
+				cal.add(Calendar.MONTH, 1);
+			}
+			else if (str.equals("<")) {
+				cal.add(Calendar.MONTH, -1);
+			}
 			
 		}
 	}
