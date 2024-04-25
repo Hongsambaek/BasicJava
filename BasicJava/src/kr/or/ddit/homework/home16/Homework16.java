@@ -33,8 +33,10 @@ public class Homework16 {
 			if(sel == 3) stage = new StageC();
 			stage.game();
 			stage.gameMoney();
-				
 			
+			}
+				
+			System.out.println(money);
 			String str = sc.next();
 			
 
@@ -42,4 +44,4 @@ public class Homework16 {
 	}
 
  }
-}
+

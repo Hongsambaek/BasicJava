@@ -18,7 +18,7 @@ public class practiceMan2 {
 		Calendar cal = Calendar.getInstance();
 		while (true) {
 			// <이전달 다음달>
-			System.out.println("================"+cal.get(Calendar.YEAR)+"년"+cal.get(Calendar.MONTH)+"월"+"=========================");
+			System.out.println("================"+cal.get(Calendar.YEAR)+"년"+cal.get(Calendar.MONTH)+"월=========================");
 			System.out.println("<이전달\t\t\t\t\t다음달>");
 			System.out.println("일\t월\t화\t수\t목\t금\t토");
 			System.out.println("=======================================================");

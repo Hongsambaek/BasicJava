@@ -9,7 +9,7 @@ public class StageB extends Stage{
 		// TODO Auto-generated method stub
 		System.out.println("죽음의 가위바위보 게임을 시작하지");
 		System.out.println("가위, 바위, 보!");
-		while(true) {
+		
 			// 0 → 가위
 			// 1 → 바위
 			// 2 → 보
@@ -93,7 +93,7 @@ public class StageB extends Stage{
 				}
 			}
 		}
-	}
+	
 	
 
 	
@@ -103,6 +103,9 @@ public class StageB extends Stage{
 		// TODO Auto-generated method stub
 		Homework16.money-=6000;
 		
+			
+		}
 		
+
 	}
-}
+
