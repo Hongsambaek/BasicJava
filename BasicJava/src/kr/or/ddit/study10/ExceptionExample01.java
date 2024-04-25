@@ -30,8 +30,8 @@ public class ExceptionExample01 {
 		catch (Exception e) {
 			e.printStackTrace();
 		}
-		System.out.println("종료 되었습니다.");
 		
+		System.out.println("종료 되었습니다.");
 	}
 }
 		
