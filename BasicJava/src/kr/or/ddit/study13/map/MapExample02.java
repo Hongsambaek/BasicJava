@@ -26,6 +26,8 @@ public class MapExample02 {
 		printAll(empList);
 		
 		addDeptSal(empList);
+		
+		increaseDept(empList);
 	}
 	
 	
@@ -79,6 +81,23 @@ public class MapExample02 {
 		}
 		System.out.println(resultMap);
 		
+	}
+	
+	public void increaseDept(List<Map<String, Object>> empList) {
+		printAll(empList);
+		System.out.println("인상할 부서 번호를 입력하시오.");
+		int deptno = sc.nextInt();
+		for (Map<String, Object> map : empList) {
+			int deptno2 = (int)map.get("DEPTNO");
+			//선택한 부서가 아니라면 continue
+			if(deptno != deptno2) continue;
+			
+			int sal = (int)map.get("SAL");
+			sal =(int)(sal*1.1);
+			
+			map.put("SAL", sal);
+		}
+		printAll(empList);
 	}
 	
 	
