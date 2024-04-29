@@ -62,13 +62,13 @@ public class Homework19 {
            int totalTime = entry.getValue();
            int basicTime = 180;
            int basicPay = 5000;
-           int unitTime = 10;
-           int unitPay = 600;
+           int Time = 10;
+           int minPay = 600;
            int totalPay = 0;
            if (totalTime <= basicTime) {
                totalPay = basicPay;
            } else {
-               totalPay = basicPay + ((totalTime - basicTime + unitTime - 1) / unitTime) * unitPay;
+               totalPay = basicPay + ((totalTime - basicTime + Time - 1) / Time) * minPay;
            }
            parkPayMap.put(carNumber, totalPay);
        }
