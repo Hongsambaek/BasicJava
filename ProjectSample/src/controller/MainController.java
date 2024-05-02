@@ -23,8 +23,10 @@ public class MainController extends Print {
 			switch (view) {
 			case HOME:
 				view = home();
+				break;
 			case LOGIN:
 				view = login();
+				break;
 			case SIGN:
 				view = sign();
 				break;

@@ -25,9 +25,9 @@ public class MemberDao {
 	public Map<String, Object> login(List<Object> param) {
 		
 		String sql = "SELECT *\r\n" + 
-					 "FROM MEMBER\r\n" + 
-					 "WHERE MEM_ID = ?\r\n" + 
-					 "AND MEM_PASS = ?";
+					 "FROM JAVA_MEMBER\r\n" + 
+					 "WHERE ID = ?\r\n" + 
+					 "AND PASS = ?";
 		
 		return jdbc.selectOne(sql, param);
 		
