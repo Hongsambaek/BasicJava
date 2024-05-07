@@ -51,7 +51,7 @@ public class Homework20 {
 				logout();
 			}
 			else {
-				System.out.println("잘못된 숫자입니다. ????갈고리 수집가????.");
+				System.out.println("잘못된 숫자입니다? ????갈고리 수집가????.");
 			}
 		}
 	}
