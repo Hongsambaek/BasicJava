@@ -1,3 +1,4 @@
+package ASDF;
 
 
 import java.awt.Color;
@@ -12,8 +13,8 @@ import javax.imageio.ImageIO;
 public class Image {
 	static int pixel_rate = 2;
 	static String write_txt = "/Users/gihyeokkwon/Documents/test.txt";
-	static String read_image = "C:\\Users\\PC-27\\Desktop"; // 이미지 로고 주소
-
+	static String read_image = "‪C:\\Users\\PC-27\\Desktop\\ASDF\\ASD.JPG";
+			
 	public static void main(String[] args) throws IOException {
 		File imgFile = null;
 		File mfile = new File(write_txt);
